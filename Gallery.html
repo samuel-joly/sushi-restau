@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <link type='text/css' rel='stylesheet' href='css/stylesheet.css'/>
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css"/>
+		<link rel="icon" href="Img/icon.png" >
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+        <script src='js/isotope.pkgd.js'></script>
+        <title>Gallery - Red Dragon</title>
+
+
+    </head>
+
+    <body>
+        <header>
+			<a href='Index.html'>
+			<img src='Img/logo.png' alt='Red Dragon Logo'/>
+			</a>
+		</header>
+        
+        <div id='aList'>
+			<img id='listBtn' src='Img/hamburgerButton.png' alt='Hamburger Button' onclick='drop()'/>
+            <ul class='fullScreen'>
+                <li><a href='Index.html' >Home</a></li>
+                <li><a href='Menu.html'>Pricing</a></li>
+                <li><a href='Reservation.html'>Booking</a></li>
+                <li><a href='#'>Event</a></li>
+                <li><a href='Gallery.html' style='color:#8C6843;'>Gallery</a></li>
+            </ul>
+        </div>
+        
+        <div id='container' class='indexContain'>
+            <div class='grid-item grid-item--height2 paper food team interior'>
+                <h1>Gallery filter</h1>
+                <ul class='galleryFilter'>
+                    <li><p data-filter='*'>All images</p></li>
+                    <li><p data-filter='.food'>Food</p></li>
+                    <li><p data-filter='.interior'>The restaurant</p></li>
+                    <li><p data-filter='.team'>The team</p></li>
+                </ul>                    
+                
+            </div>
+            
+            <img class='grid-item grid-item--height2 lightbox-item team' src='Img/chiefImg.jpg' alt='Chief Image'/>
+            
+            <img class='grid-item lightbox-item food' src='Img/img1.jpg' alt='GalleryImage'/>
+            
+            <img class='grid-item lightbox-item food' src='Img/img2.jpg' alt='GalleryImage'/>
+            
+            <img class='grid-item grid-item--height2 grid-item--width2 lightbox-item food' src='Img/img4.jpg' alt='GalleryImage'/>
+            
+            <img class='grid-item grid-item--height2 lightbox-item food grid-item-between' src='Img/cake.jpg' alt='GalleryImage'/>
+            
+            <img class='grid-item lightbox-item food' src='Img/ReservFlexslider/img6.jpg' alt='GalleryImage'/>
+            
+            <img class='grid-item lightbox-item food' src='Img/ReservFlexslider/img8.jpg' alt='GalleryImage'/>
+            
+            <img class='grid-item lightbox-item team' src='Img/team1.jpg' alt='GalleryImage'/>
+            
+			
+			
+            <a href='Index.html'><img class='grid-item grid-item--height2 specialPhone' src='Img/logo.png' alt='GalleryImage'/></a>
+            
+            <a href='Reservation.html'><img class='grid-item invertSpecialPhone' src='Img/where.jpg' alt='Gallery Where ink Image'/></a>
+            
+			
+            
+			<img class='grid-item grid-item--width2 grid-item--height2 lightbox-item food' src='Img/cake2.jpg' alt='GalleryImage'/>
+            
+            <img class='grid-item lightbox-item interior' src='Img/interior1.jpg' alt='GalleryImage'/>
+            
+            <img class='grid-item lightbox-item interior' src='Img/interior2.jpg' alt='GalleryImage'/>
+            
+            
+            
+			<a href='Reservation.html'><img class='grid-item lightbox-item specialPhone' src='Img/where.jpg' alt='Gallery Where ink Image'/></a>
+            <a href='#'><img class='grid-item specialPhone' src='Img/dessert.jpg' alt='Menu Link Image'/></a>
+			
+			
+			<img class='grid-item lightbox-item interior ' src='Img/private1.jpg' alt='GalleryImage'/>
+			<img class='grid-item lightbox-item team ' src='Img/team3.jpg' alt='GalleryImage'/>
+			<img class='grid-item lightbox-item grid-item--width2 grid-item--height2 food' src='Img/img3.jpg' alt='GalleryImage'/>
+
+            
+			<a href='#'><img class='grid-item invertSpecialPhone' src='Img/openKitchen.jpg' alt='Open Kitchen Link Image'/></a>
+            
+            
+            
+            
+        </div>
+        
+        <footer>
+			<div id='contact'>
+                <a href='#'><img src='Img/facebook.png' alt='Facebook Page Image'/></a>   <a href='#'><img src='Img/instagram.png' alt='instagram Profile Image'/></a>
+                <a href='#'><img src='Img/snapchat.png' alt='Snapchat Image'/></a>   <a href='#'><img src='Img/tel.png' alt='Telephone Image'/></a>
+            </div>
+        </footer>
+        
+        <script src='js/lightbox.js'></script>
+        <script src='js/isotopeFilter.js'></script>
+		<script src='js/dropdown.js'></script>
+
+    </body>
+</html>

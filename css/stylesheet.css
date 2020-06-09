@@ -1,0 +1,382 @@
+*
+{ 
+    box-sizing: border-box; 
+    vertical-align: baseline;
+}
+
+body
+{
+    background-image: url(http://koi-aixenprovence.com/restaurant/wp-content/themes/koi/images/bg_koi.jpg);
+    background-size:cover;
+    margin:0px;
+}
+
+
+
+/* =============== HEADER =============== */
+header
+{
+    width:350px;
+    height:415px;
+    margin:auto;
+}
+
+
+/* =============== MASONERY =============== */
+#container
+{
+    max-width:1000px;
+    margin:auto;
+}
+
+#container:after
+{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {width:320px; height:200px;margin-bottom:20px;}
+.grid-item--width2 {width:660px;} 
+.grid-item--height2 {height:420px;}
+.grid-item--height15 {height:300px;}
+.flexslider{overflow:hidden;}
+
+/* =============== PAPER =============== */
+.paper
+{
+    font-family: futuram;
+    color:black;
+    background-image: url('../Img/bg-white1.png');
+    background-color:white;
+    background-size:cover;
+}
+
+.paper h1
+{
+    text-transform:uppercase;
+    font-family: futuram;
+    margin:auto;
+    text-align: center;
+    margin-top:20px;
+    width:200px;
+    font-size:1.3em;
+    text-align: left;
+    border-bottom:1px dotted black;
+    font-weight:inherit;
+}
+
+.paper p
+{
+    font-size:0.7em;
+    text-align: justify;
+    width:200px;
+    margin:auto;
+    margin-top:15px;
+}
+
+.paper p strong
+{
+    font-weight:normal;
+    color:grey;
+}
+
+.paper p a
+{
+    color:black;
+    text-decoration: underline;
+}
+
+
+
+.paperMenu
+{
+	font-family: futuram;
+    color:black;
+    background-image: url('../Img/bg-white1.png');
+    background-color:white;
+    background-size:cover;
+}
+
+.menuName
+{
+    text-transform:uppercase;
+    font-family: futuram;
+    margin:auto;
+    text-align: center;
+    margin-top:20px;
+    width:200px;
+    font-size:1.3em;
+    text-align: left;
+    border-bottom:1px dotted black;
+    font-weight:inherit;
+}
+
+.paperMenu div
+{
+	display:flex;
+	justify-content:space-between;
+	width:210px;
+	margin:auto;
+	
+}
+
+
+.paperMenu div h1
+{
+	width:150px;
+	color:black;
+	font-size:1.1em;
+}
+
+.paperMenu div span
+{
+	color:black;
+	position:relative;
+	top:15px;
+	right:2px;
+	font-size:1.2em;
+	text-align:right;
+}
+
+.paperMenu p
+{
+	color:grey;
+	font-size:0.7em;
+	width:210px;
+	margin:auto;
+	position:relative;
+	bottom:5px;
+	border-bottom:1px dotted black;
+}
+
+/* =============== IMAGES =============== */
+#reservation
+{
+    height:420px;
+}
+
+footer
+{
+    width:100%;
+    height:150px;
+    background-color:black;
+}
+
+#contact
+{
+    margin:auto;
+    width:500px;
+    display:flex;
+    justify-content: space-around;
+}
+
+#contact img
+{
+    margin-top:50px;
+}
+
+.slides li img
+{
+    height:200px;
+}
+
+
+
+/* ============== LIGHTBOX ============== */
+#lightbox
+{
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.8);
+    z-index:10;
+}
+
+#content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:70px;
+}
+
+#content img
+{
+    max-width:1000px;
+    min-width:500px;
+    height:auto;
+    margin:auto;
+    max-height:80vh;
+}
+
+
+#closeButton
+{
+    background-image: url('../Img/closeButton.png');
+    background-size:cover;
+    border:5px solid white;
+    width:70px;
+    height:70px;
+    margin:auto;
+    margin-bottom:25px;
+    cursor:pointer;
+}
+
+.lightbox-item
+{
+    cursor:pointer;
+}
+
+
+
+/* =============== RESERVATION FORM =============== */
+#reservForm
+{
+    width:250px;
+    margin:auto;
+    margin-top:15px;
+    display:flex;
+    flex-direction:column;
+}
+
+.entry
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:15px;
+    border-bottom:1px dotted black;
+    padding-bottom:10px;
+}
+
+.error
+{  
+    display:none;
+}
+
+.entry p
+{
+    position:absolute;
+    font-family:'futuram';
+    color:grey;
+}
+
+#submit-info
+{
+    display:none;
+}
+
+#mapid {z-index:0;}
+
+#galleryReservation {display:none;}
+
+
+
+/* =============== GALLERY PAPER =============== */
+.galleryFilter
+{
+    list-style:none;
+    width:200px;
+    margin:20px;
+}
+
+.galleryFilter li p
+{
+    text-decoration: underline;
+    cursor:pointer;
+    
+}
+
+.galleryFilter li p:hover
+{
+    color:grey;
+}
+
+.specialPhone {display:none;}
+
+
+
+/* =============== NAVBAR =============== */
+
+#aList
+{
+    width:1000px;
+    margin:auto;
+	align-items:center;
+}
+
+#aList ul
+{
+    width:1000px;
+    list-style: none;
+    display:inline-flex;
+    justify-content: space-around;
+}
+
+#aList li
+{
+    position:relative;
+    right:25px;
+}
+
+#aList li a
+{
+    font-size:1.05em;
+    color: #C09E72 ;
+    text-decoration: none;
+}
+
+#aList li a:hover{
+    color: #8C6843;
+    transition-duration:0.2s;
+}
+
+#listBtn
+{
+	width:50px;
+	height:auto;
+	display:none;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+
+.dropDownMenu
+{
+	border:1px solid #f7e479;
+	display:flex;
+	flex-direction:column;
+	max-width:660px;
+	align-items:center;
+}
+
+.dropDownMenu li
+{
+	margin:15px;
+	width:auto;
+}
+
+.indexContain
+{
+	transition:top 0.50s ease;
+}
+
+/* =============== PHONE VIEW =============== */
+
+@media only screen and (max-width: 1000px) {
+    #container { max-width:660px; }
+    #galleryReservation {display:inline;}
+    .booking {height:420px;}
+    #content img{ width:660px;}
+    .specialPhone {display:block;}
+    .invertSpecialPhone{display:none;}
+	#aList{width:660px; height:50px;}
+	#aList .fullScreen {display:none; width:660px;}
+	#listBtn{display:block;}
+	.indexContain{position:relative;}
+	footer{position:relative;}
+}

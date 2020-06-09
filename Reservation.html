@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+    <head>
+        <link type='text/css' rel='stylesheet' href='css/stylesheet.css' />
+		<link rel="icon" href="Img/icon.png" >
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+        <script src='js/isotope.pkgd.js'></script>
+        
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css"/>
+        <script src='js/jquery.flexslider.js'></script>
+        <title>Reservation - Red Dragon</title>
+    </head>
+    
+    <body>
+        <header>
+			<a href='Index.html'>
+			<img src='Img/logo.png' alt='Red Dragon Logo'/>
+			</a>
+		</header>
+        
+        <div id='aList'>
+			<img id='listBtn' src='Img/hamburgerButton.png' alt='Hamburger Button' onclick='drop()'/>
+            <ul class='fullScreen'>
+                <li><a href='Index.html'>Home</a></li>
+                <li><a href='Menu.html'>Pricing</a></li>
+                <li><a href='Reservation.html' style='color:#8C6843;'>Booking</a></li>
+                <li><a href='#'>Event</a></li>
+                <li><a href='Gallery.html'>Gallery</a></li>
+            </ul>
+        </div>
+        
+        <div id='container' class='indexContain'>
+            <div id='mapid' class='grid-item grid-item--width2 grid-item--height2'></div>
+            <div class='grid-item grid-item--height2 booking paper'>
+                <div id='myForm'>
+                    <h1 style='width:95px;'>Booking</h1>
+                    <form id='reservForm'>
+                        <div class='entry'>
+                            <label for='name'>Name :</label>
+                            <input type='text' name='name' placeholder='Alan Smithee'>
+                            <p class='error'>Please enter a name</p>
+                        </div>
+
+                        <div class='entry'>
+                            <label for='eMail'>Email :</label>
+                            <input type='text' name='eMail' placeholder='Alan_Smithee@gmail.com'>
+                            <p class='error'>Please enter an Email</p>
+                        </div>
+                        
+                        <div class='entry'>
+                            <label for='phone'>Phone :</label>
+                            <input type='text' name='phone' placeholder='03 14 15 92 65'>
+                            <p class='error'>Please enter a phone number</p>
+                        </div>
+
+                        <div class='entry'>
+                            <label for='hour'>Hour:</label>
+                            <div id='hourChoose'>
+                                <input type='text' name='hour' size=1 placeholder='19'> :
+                                <input type='text' name='minute' size=1 placeholder='30'>
+                            </div>
+                            <p class='error'>Between 7pm to 12pm</p>
+                        </div>
+
+                        <div class='entry'>
+                            <label for='howMany'>How many are you ?</label>   
+                            <select name='howMany'>
+                                    <option name='default' selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>More</option>
+                           </select>
+                        </div>
+
+                        <img src='Img/captcha.png' style='margin-top:10px;width:250px;border-radius: 4px;box-shadow: 3px 3px 4px grey;'>
+                        <input type='button' value='Submit' onclick='Check();' style='margin:auto;margin-top:10px;width:100px;'>
+                    </form>
+                </div>
+                <div id='submit-info'>
+                    <h1>Your request has been sent !</h1>
+                    <p> <strong>Our team will answer to your request by Email in 10 to 20 minutes</strong><br>
+                        Feel free to check <a href='Gallery.html'> our gallery.</a></p>
+                    <img src='Img/logo.png' style='margin:20px 0 0 50px; width:200px;'>
+                </div>
+                    
+            </div>
+
+            <div class="grid-item openKitchenAd paper">
+                <h1>Open Kitchen Days</h1>
+                <p>
+                    <strong>Will you be interested in our Japanese cooking classes ?</strong><br>
+                    For 95$/Customer you will learn in 3h the art of sushi and fish cooking.<br>
+                    <a href='OpenKitchen.html'><strong>See more ...</strong></a>
+                </p>
+            </div>
+            <div  ><a href='#'><img class='grid-item' id='galleryReservation' src='Img/gallery.jpg' ></a></div>
+
+            <div id='' class="grid-item grid-item--width2 flexslider carousel">
+                <ul class='slides'>
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img1.jpg" alt='GalleryImage'/>
+                    </li>
+                    
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img2.jpg" alt='GalleryImage'/ >
+                    </li>
+                    
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img3.jpg" alt='GalleryImage'/>
+                    </li>
+                    
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img4.jpg" alt='GalleryImage'/ >
+                    </li>
+                    
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img5.jpg" alt='GalleryImage'/ >
+                    </li>
+                    
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img6.jpg" alt='GalleryImage'/>
+                    </li>
+                    
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img7.jpg" alt='GalleryImage'/ >
+                    </li>
+                    
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img8.jpg" alt='GalleryImage'/ >
+                    </li>
+                    
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img9.jpg" alt='GalleryImage'/>
+                    </li>
+                    
+                    <li>
+                        <img class="lightbox-item" src="Img/ReservFlexslider/img10.jpg" alt='GalleryImage'/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+			<div id='contact'>
+                <a href='#'><img src='Img/facebook.png' alt='Facebook Page Image'/></a>   <a href='#'><img src='Img/instagram.png' alt='instagram Profile Image'/></a>
+                <a href='#'><img src='Img/snapchat.png' alt='Snapchat Image'/></a>   <a href='#'><img src='Img/tel.png' alt='Telephone Image'/></a>
+            </div>
+		</footer>
+        
+        <script src='js/lightbox.js'></script>
+        <script src='js/openMap.js'></script>
+        <script src='js/isotope.js'></script>
+        <script src='js/flexsliderCarousel.js'></script>
+        <script src='js/reservationForm.js'></script>
+		<script src='js/dropdown.js'></script>
+    </body>
+</html>
